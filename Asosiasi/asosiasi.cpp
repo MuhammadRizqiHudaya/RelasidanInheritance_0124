@@ -16,3 +16,18 @@ class pasien{
             << "\" tidak ada \n";
         }
 };
+
+class dokter{
+    public:
+        string nama;
+        vector<pasien*> daftar_pasien;
+
+        dokter(string pNama): nama (pNama){
+            cout << "dokter \"" << nama << "\" ada \n";
+        }
+
+        ~dokter(){
+            cout << "dokter \"" << nama 
+            << "\" tidak ada \n";
+        }
+};
